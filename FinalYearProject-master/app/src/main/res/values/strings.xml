@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Fitness App</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_account">Account</string>
+    <string name="title_community">Community\n</string>
+    <string name="title_progress">Progress</string>
+    <string name="title_workout">Workout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_redirect_text"><![CDATA[Already Have An Account? <u>Log in Here</u>]]></string>
+
+    <string name="login_title">Log In</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="reset_password_text">Having Trouble Logging In? Reset Password</string>
+    <string name="signup_redirect_text"><![CDATA[Don’t have an account with us? <u>Sign Up Here</u>]]></string>
+
+    <string-array name="body_type_options">
+        <item>Underweight</item>
+        <item>Normal</item>
+        <item>Overweight</item>
+        <item>Obese</item>
+    </string-array>
+
+    <string-array name="goal_options">
+        <item>Weight Loss</item>
+        <item>Weight Gain</item>
+    </string-array>
+    <string name="graph_image">Progress graph</string>
+
+</resources>

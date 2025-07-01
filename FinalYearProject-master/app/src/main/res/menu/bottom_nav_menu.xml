@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_workout"
+        android:icon="@drawable/ic_workout"
+        android:title="@string/title_workout" />
+
+    <item
+        android:id="@+id/navigation_progress"
+        android:icon="@drawable/ic_progress"
+        android:title="@string/title_progress" />
+    <item
+        android:id="@+id/navigation_community"
+        android:icon="@drawable/ic_community"
+        android:title="@string/title_community" />
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account"
+        android:title="@string/title_account" />
+
+</menu>

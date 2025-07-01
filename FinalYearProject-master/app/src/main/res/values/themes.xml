@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme using Material 3 -->
+    <style name="Theme.FinalYearProject" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary brand colour: Light Blue -->
+        <item name="colorPrimary">#38B6FF</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Secondary brand colour: Soft Navy for contrast -->
+        <item name="colorSecondary">#2D9CDB</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- Background surface colours -->
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#000000</item>
+        <item name="colorSurfaceVariant">#F0F6FA</item>
+        <item name="colorOnSurfaceVariant">#2E3A59</item>
+
+        <!-- Secondary container (e.g., FABs, cards) -->
+        <item name="colorSecondaryContainer">#D0EDFF</item>
+        <item name="colorOnSecondaryContainer">#00344D</item>
+
+        <!-- Error colours -->
+        <item name="colorError">#F28B82</item> <!-- Pastel red -->
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorErrorContainer">#FEE4E2</item>
+        <item name="colorOnErrorContainer">#B3261E</item>
+
+        <!-- Status bar appearance -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+</resources>

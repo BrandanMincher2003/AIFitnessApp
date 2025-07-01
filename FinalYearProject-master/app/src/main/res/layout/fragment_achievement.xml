@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?android:colorBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Achieved Title -->
+        <TextView
+            android:id="@+id/achievedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Achieved"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?colorOnSurface"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Achieved RecyclerView (Horizontal) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/achievedRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/achievedTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            tools:listitem="@layout/item_achievement_card" />
+
+        <!-- Not Achieved Title -->
+        <TextView
+            android:id="@+id/notAchievedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Achieved"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?colorOnSurface"
+            app:layout_constraintTop_toBottomOf="@id/achievedRecyclerView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
+
+        <!-- Not Achieved RecyclerView (Horizontal) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notAchievedRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/notAchievedTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            tools:listitem="@layout/item_achievement_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

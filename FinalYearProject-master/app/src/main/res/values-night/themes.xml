@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Dark theme for the app using Material 3 -->
+    <style name="Theme.FinalYearProject" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary brand color (light blue) for dark mode -->
+        <item name="colorPrimary">#38B6FF</item>
+        <item name="colorOnPrimary">#000000</item>
+
+        <!-- Secondary brand color (slightly deeper blue) -->
+        <item name="colorSecondary">#2D9CDB</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Dark background/surface colors -->
+        <item name="colorSurface">#121212</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorSurfaceVariant">#1E1E1E</item>
+        <item name="colorOnSurfaceVariant">#B0BEC5</item>
+
+        <!-- Dark containers for FABs/cards -->
+        <item name="colorSecondaryContainer">#004D73</item>
+        <item name="colorOnSecondaryContainer">#FFFFFF</item>
+
+        <!-- Error colours (pastel red theme) -->
+        <item name="colorError">#F28B82</item> <!-- Pastel red -->
+        <item name="colorOnError">#000000</item>
+        <item name="colorErrorContainer">#5C1A12</item>
+        <item name="colorOnErrorContainer">#FFDAD4</item>
+
+        <!-- Status bar for dark theme -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- App Theme Colors from Theme.FinalYearProject -->
+    <color name="colorPrimary">#38B6FF</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#2D9CDB</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorSurfaceVariant">#F0F6FA</color>
+    <color name="colorOnSurfaceVariant">#2E3A59</color>
+    <color name="colorSecondaryContainer">#D0EDFF</color>
+    <color name="colorOnSecondaryContainer">#00344D</color>
+    <color name="colorError">#F28B82</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorErrorContainer">#FEE4E2</color>
+    <color name="colorOnErrorContainer">#B3261E</color>
+
+    <!-- Light Mode Base Colors -->
+    <color name="purple_500">#B39DDB</color>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#F5F5F5</color>
+    <color name="black">#000000</color>
+
+    <!-- Dark Mode Colors -->
+    <color name="dark_surface">#121212</color>
+    <color name="dark_surface_variant">#1E1E1E</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Greys -->
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_700">#616161</color>
+
+    <!-- Extra -->
+    <color name="purple_50">#F3E5F5</color>
+    <color name="light_blue">#38B6FF</color>
+
+
+
+</resources>

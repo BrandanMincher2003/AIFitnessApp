@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    app:strokeWidth="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Workout Background Image -->
+        <ImageView
+            android:id="@+id/workout_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logo_basic" />
+
+        <!-- Workout Info Overlay -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#80000000">
+
+            <TextView
+                android:id="@+id/workout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout Title"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/target_muscles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biceps, Triceps"
+                android:textColor="#CCCCCC"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/creator_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By: Creator Name"
+                android:textColor="#BBBBBB"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Top-right Profile Image -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/creator_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_person"
+            android:contentDescription="Creator Profile Picture"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            android:layout_gravity="top|end" />
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

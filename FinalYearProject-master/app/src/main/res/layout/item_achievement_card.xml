@@ -1,0 +1,53 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/colorPrimary"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="12dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/achievement_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_achievement"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/RoundedAchievementStyle" />
+
+
+        <TextView
+            android:id="@+id/achievement_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal Getter"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/achievement_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set and achieve your first fitness goal"
+            android:textSize="11sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

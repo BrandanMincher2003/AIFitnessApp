@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?attr/colorSurface"
+    tools:context=".Community.CommunityDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/community_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Guidelines -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.92" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/community_workout_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Workout Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintTop_toTopOf="@id/guideline_top"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end" />
+
+        <!-- Type -->
+        <TextView
+            android:id="@+id/community_workout_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Workout Type"
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/community_workout_title"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/community_workout_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Workout description goes here."
+            android:textSize="15sp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/community_workout_type"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end" />
+
+        <!-- Target Muscles -->
+        <TextView
+            android:id="@+id/community_target_muscles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Target: Chest, Legs"
+            android:textSize="15sp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/community_workout_description"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end" />
+
+        <!-- Equipment -->
+        <TextView
+            android:id="@+id/community_equipment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Equipment: Dumbbells"
+            android:textSize="15sp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/community_target_muscles"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end" />
+
+        <!-- Exercises Label -->
+        <TextView
+            android:id="@+id/community_exercises_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Exercises"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/community_equipment"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end" />
+
+        <!-- RecyclerView with wrap height -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/community_exercise_recycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/community_exercises_label"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end" />
+
+        <!-- Add To Your Workout Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_to_your_workout_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add To Your Workout"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            app:backgroundTint="?attr/colorPrimary"
+            app:cornerRadius="16dp"
+            app:layout_constraintTop_toBottomOf="@id/community_exercise_recycler"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

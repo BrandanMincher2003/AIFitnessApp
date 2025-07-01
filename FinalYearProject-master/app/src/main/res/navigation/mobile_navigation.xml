@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_workout">
+
+    <fragment
+        android:id="@+id/navigation_workout"
+        android:name="com.example.finalyearproject.Workout.WorkoutFragment"
+        android:label="@string/title_workout"
+        tools:layout="@layout/fragment_workout" />
+
+    <fragment
+        android:id="@+id/navigation_progress"
+        android:name="com.example.finalyearproject.Progress.ProgressFragment"
+        android:label="@string/title_progress"
+        tools:layout="@layout/fragment_progress" />
+
+    <fragment
+        android:id="@+id/navigation_community"
+        android:name="com.example.finalyearproject.Community.CommunityFragment"
+        android:label="@string/title_community"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.finalyearproject.Account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+
+
+    <fragment
+        android:id="@+id/workoutCreatorFragment"
+        android:name="com.example.finalyearproject.Workout.WorkoutCreatorFragment"
+        android:label="Create Workout"
+        tools:layout="@layout/fragment_workout_creator" />
+
+    <fragment
+        android:id="@+id/addExerciseFragment"
+        android:name="com.example.finalyearproject.Workout.AddExercise"
+        android:label="Add Exercise"
+        tools:layout="@layout/fragment_add_exercise" />
+
+    <fragment
+        android:id="@+id/exerciseDetailsFragment"
+        android:name="com.example.finalyearproject.Workout.ExerciseDetailsFragment"
+        android:label="Exercise Details"
+        tools:layout="@layout/fragment_exercise_details" />
+
+    <fragment
+        android:id="@+id/profileOptionsFragment"
+        android:name="com.example.finalyearproject.Account.ProfileOptionsFragment"
+        android:label="Profile Options" />
+
+    <fragment
+        android:id="@+id/progressFragment"
+        android:name="com.example.finalyearproject.Progress.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress">
+        <action
+            android:id="@+id/action_progressFragment_to_addGoalFragment"
+            app:destination="@id/addGoalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addGoalFragment"
+        android:name="com.example.finalyearproject.Progress.AddGoalFragment"
+        android:label="Add Goal"
+        tools:layout="@layout/fragment_add_goal" />
+    <fragment
+        android:id="@+id/ViewGoalFragment"
+        android:name="com.example.finalyearproject.Progress.ViewGoalFragment"
+        android:label="View Goal"
+        tools:layout="@layout/fragment_view_goal" />
+
+    <fragment
+        android:id="@+id/achievementFragment"
+        android:name="com.example.finalyearproject.Account.AchievementFragment"
+        android:label="Achievements"
+        tools:layout="@layout/fragment_achievement" />
+    <fragment
+        android:id="@+id/workoutCreatorFragment2"
+        android:name="com.example.finalyearproject.Workout.WorkoutCreatorFragment2"
+        android:label="Workout Editor"
+        tools:layout="@layout/fragment_workout_creator2" />
+
+
+    <fragment
+        android:id="@+id/workoutDetailsFragment"
+        android:name="com.example.finalyearproject.Workout.WorkoutDetailsFragment"
+        android:label="Workout Details"
+        tools:layout="@layout/fragment_workout_details">
+        <argument
+            android:name="workoutId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/preplannedWorkoutDetailsFragment"
+        android:name="com.example.finalyearproject.Workout.PreplannedWorkoutDetailsFragment"
+        android:label="Preplanned Workout Details"
+        tools:layout="@layout/fragment_workout_details">
+        <argument
+            android:name="workoutId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/communityDetailsFragment"
+        android:name="com.example.finalyearproject.Community.CommunityDetailsFragment"
+        android:label="Community Details" />
+
+
+
+
+</navigation>
